@@ -112,12 +112,8 @@ function setupDynamicLinksAndData() {
   // Botón Google Form RSVP
   const formBtn = document.getElementById("btn-google-form");
   if (formBtn) {
-    if (GOOGLE_FORM_URL && GOOGLE_FORM_URL !== "REEMPLAZAR_AQUI") {
+    if (GOOGLE_FORM_URL && GOOGLE_FORM_URL.startsWith("http")) {
       formBtn.href = GOOGLE_FORM_URL;
-      formBtn.target = "_blank";
-      formBtn.rel = "noopener noreferrer";
-    } else {
-      formBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hola Paola 🤠💕 Quiero confirmar mi asistencia a tu cumpleaños número 30.")}`;
       formBtn.target = "_blank";
       formBtn.rel = "noopener noreferrer";
     }
