@@ -4,7 +4,7 @@
 
 const EVENT_DATE = "2026-12-19T17:00:00-06:00"; // 19 dic 2026, 5:00 PM (CDMX)
 
-const WHATSAPP_NUMBER = "525565546465";
+const WHATSAPP_NUMBER = "525580331525";
 
 // Reemplazar aquí con el enlace de tu formulario de Google Form cuando esté listo
 const GOOGLE_FORM_URL = "REEMPLAZAR_AQUI";
@@ -112,7 +112,7 @@ function setupDynamicLinksAndData() {
   // Botón Google Form RSVP
   const formBtn = document.getElementById("btn-google-form");
   if (formBtn) {
-    if (GOOGLE_FORM_URL && GOOGLE_FORM_URL !== "REEMPLAZAR_AQUI") {
+    if (GOOGLE_FORM_URL && GOOGLE_FORM_URL !== "https://forms.gle/DHbmaDy1voFWRc3m6") {
       formBtn.href = GOOGLE_FORM_URL;
       formBtn.target = "_blank";
       formBtn.rel = "noopener noreferrer";
